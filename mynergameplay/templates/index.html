@@ -22,15 +22,10 @@
             border-radius: 20px 20px 20px 20px;
             width: 854;
             height: 540;          
-            }
-
-            
-            </style>
-        
-        
-        
+            }            
+            </style>        
         <header>
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-inverse" style="background-color: black">
             <div class="container-fluid">
                 <div class="navbar-header">
                 <a class="navbar-brand" href="{{ url_for('home') }}">Myner Gameplay</a>
@@ -39,7 +34,9 @@
                         <li><a href="{{ url_for('home') }}"></i>Home</a></li>
                         <li><a href="{{ url_for('videos') }}">Videos</a></li>
                         <li><a href="{{ url_for('playlist') }}">Playlists</a></li>
-                        <li><a href="">About Us</a></li>
+                        <li><a href="{{ url_for('about') }}">About Us</a></li>
+                        <li><a href="{{ url_for('privacy') }}">Privacy Policy</a></li>
+                        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
                     </ul>
                 
             </div>
@@ -49,146 +46,6 @@
     <body>
     {% block content %}
     {% endblock %}
-  <footer class="bg-primary text-center text-lg-start text-white">
-    <!-- Grid container -->
-    <div class="container p-4">
-      <!--Grid row-->
-      <div class="row my-4">
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-
-          <div class="rounded-circle bg-black shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
-            <img src="https://mdbootstrap.com/img/Photos/new-templates/animal-shelter/logo.png" height="70" alt=""
-                 loading="lazy" />
-          </div>
-
-          <p class="text-center">Homless animal shelter The budgetary unit of the Capital City of Warsaw</p>
-
-          <ul class="list-unstyled d-flex flex-row justify-content-center">
-            <li>
-              <a class="text-white px-2" href="#!">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-            </li>
-            <li>
-              <a class="text-black px-2" href="#!">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a class="text-white ps-2" href="#!">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </li>
-          </ul>
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4">Animals</h5>
-
-          <ul class="list-unstyled">
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>When your pet is missing</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Recently found</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>How to adopt?</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Pets for adoption</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Material gifts</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Help with walks</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Volunteer activities</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4">Animals</h5>
-
-          <ul class="list-unstyled">
-            <li class="mb-2">
-              <a href="#!" class="text-black"><i class="fas fa-paw pe-3"></i>General information</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>About the shelter</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Statistic data</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Job</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Tenders</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Contact</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4">Contact</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <p><i class="fas fa-map-marker-alt pe-2"></i>Warsaw, 57 Street, Poland</p>
-            </li>
-            <li>
-              <p><i class="fas fa-phone pe-2"></i>+ 01 234 567 89</p>
-            </li>
-            <li>
-              <p><i class="fas fa-envelope pe-2 mb-0"></i>contact@example.com</p>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-      </div>
-      <!--Grid row-->
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-
-
-<!-- End of .container -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- Remove the container if you want to extend the Footer to full width. -->
 
@@ -203,7 +60,7 @@
           <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">About us</a>
+              <a href="{{ url_for('home') }}" class="text-white">Home</a>
             </h6>
           </div>
           <!-- Grid column -->
@@ -211,7 +68,7 @@
           <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Products</a>
+              <a href="{{ url_for('videos') }}" class="text-white">Videos</a>
             </h6>
           </div>
           <!-- Grid column -->
@@ -219,7 +76,7 @@
           <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Awards</a>
+              <a href="{{ url_for('playlist') }}" class="text-white">Playlists</a>
             </h6>
           </div>
           <!-- Grid column -->
@@ -227,7 +84,7 @@
           <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Help</a>
+              <a href="{{ url_for('about') }}" class="text-white">About Us</a>
             </h6>
           </div>
           <!-- Grid column -->
@@ -235,7 +92,14 @@
           <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Contact</a>
+              <a href="{{ url_for('privacy') }}" class="text-white">Privacy Policy</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="{{ url_for('contact') }}" class="text-white">Contact Us</a>
             </h6>
           </div>
           <!-- Grid column -->
@@ -249,10 +113,9 @@
       <!-- Section: Text -->
       <section class="mb-5">
         <div class="row d-flex justify-content-center">
-          <div class="col-lg-8">
+          <div class="col-lg-12">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              distinctio earum repellat .
+              The Myner Gameplay Trailer provides a comprehensive overview of this YouTube channel. You can look forward to engaging objectives, intense combat, and fast-paced vehicle racing. When you subscribe, you'll be the first to see the gameplay videos.
             </p>
           </div>
         </div>
@@ -261,7 +124,7 @@
 
       <!-- Section: Social -->
       <section class="text-center mb-5">
-        <a href="" class="text-white me-4">
+        <a href="" class="text-white me-12">
           <i class="fab fa-facebook-f"></i>
         </a>
         <a href="" class="text-white me-4">
@@ -289,9 +152,9 @@
          class="text-center p-3"
          style="background-color: rgba(0, 0, 0, 0.2)"
          >
-      © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/"
-         >MDBootstrap.com</a
+      © 2023 Copyright:
+      <a class="text-white" href="https://myner-gameplay.onrender.com/"
+         >Myner Gameplay</a
         >
     </div>
     <!-- Copyright -->
