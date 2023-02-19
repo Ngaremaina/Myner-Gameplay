@@ -8,24 +8,23 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-        <style>
-            .card {
-            width: 40%;
-            border-radius: 5px;
-            content: "";
-            clear: both;
-            display: table;           
-            }
+        <style> 
+          .nav.navbar-nav.navbar-right li a{
+              color: blue;
+            } 
 
-            iframe {
+          iframe {
+          padding: 2px;
+          border-radius: 20px 20px 20px 20px;      
+          }  
+          main{
             padding: 10px;
-            border-radius: 20px 20px 20px 20px;
-            width: 854;
-            height: 540;          
-            }            
-            </style>        
+            color: black;
+          }
+          
+        </style>        
         <header>
-        <nav class="navbar navbar-inverse" style="background-color: black">
+        <nav class="navbar navbar-inverse text-uppercase font-weight-bold" style="background-color: black">
             <div class="container-fluid">
                 <div class="navbar-header">
                 <a class="navbar-brand" href="{{ url_for('home') }}">Myner Gameplay</a>
@@ -40,77 +39,53 @@
                     </ul>
                 
             </div>
-            </nav>
+          </nav>
         </header>    
     </head>
     <body>
+    
     {% block content %}
+
+
     {% endblock %}
-
-<!-- Remove the container if you want to extend the Footer to full width. -->
-
-  <!-- Footer -->
-  <footer class="text-center text-white" style="background-color: black">
-    <!-- Grid container -->
+  
+  <footer class="text-center text-white bg-dark" style="background-color: black">
     <div class="container">
-      <!-- Section: Links -->
       <section class="mt-5">
-        <!-- Grid row-->
         <div class="row text-center d-flex justify-content-center pt-5">
-          <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
               <a href="{{ url_for('home') }}" class="text-white">Home</a>
             </h6>
           </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
               <a href="{{ url_for('videos') }}" class="text-white">Videos</a>
             </h6>
           </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
               <a href="{{ url_for('playlist') }}" class="text-white">Playlists</a>
             </h6>
           </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
               <a href="{{ url_for('about') }}" class="text-white">About Us</a>
             </h6>
           </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
               <a href="{{ url_for('privacy') }}" class="text-white">Privacy Policy</a>
             </h6>
           </div>
-          <!-- Grid column -->
-          <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
               <a href="{{ url_for('contact') }}" class="text-white">Contact Us</a>
             </h6>
           </div>
-          <!-- Grid column -->
         </div>
-        <!-- Grid row-->
       </section>
-      <!-- Section: Links -->
-
       <hr class="my-5" />
-
-      <!-- Section: Text -->
       <section class="mb-5">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-12">
@@ -120,47 +95,24 @@
           </div>
         </div>
       </section>
-      <!-- Section: Text -->
-
-      <!-- Section: Social -->
       <section class="text-center mb-5">
-        <a href="" class="text-white me-12">
-          <i class="fab fa-facebook-f"></i>
+        <a href="https://twitter.com/MynerGameplay" class="text-white me-4">
+          <i class="fab fa-twitter fa-2x"></i>
         </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-twitter"></i>
+        <a href="https://www.instagram.com/mynergameplay/" class="text-white me-4">
+          <i class="fab fa-instagram fa-2x"></i>
         </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-github"></i>
+         <a href="" class="text-white me-4">
+          <i class="bi bi-tiktok"></i>
         </a>
       </section>
-      <!-- Section: Social -->
     </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div
-         class="text-center p-3"
-         style="background-color: rgba(0, 0, 0, 0.2)"
-         >
+    <div class="text-center p-3">
       © 2023 Copyright:
-      <a class="text-white" href="https://myner-gameplay.onrender.com/"
-         >Myner Gameplay</a
-        >
+      <a class="text-white" href="https://myner-gameplay.onrender.com/">Myner Gameplay</a>
     </div>
-    <!-- Copyright -->
+   
   </footer>
-  <!-- Footer -->
-
-<!-- End of .container -->
+  
     </body>
 </html>
