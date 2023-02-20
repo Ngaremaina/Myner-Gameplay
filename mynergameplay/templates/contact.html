@@ -5,24 +5,39 @@
 {% block content %}
 <body>
 <main>
-<form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    
-  </div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Name</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name">
-    
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Message</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-  </div>
-  
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form><br><br>
+<div class="contact">
+    <h3>Contact us</h3>
+<!-- Just here i use "url_for" to call the function get_contact.
+         This function return the html code of our contact page-->
+    <form action="{{ url_for('contact') }}" method=post>
+        <div>
+            <!-- name forms -->
+            <p>
+                {{ form.name.label }} Name<br>
+                {{ form.name(placeholder='Enter your name') }}
+            </p>
+            <!-- email forms -->
+            <p>
+                {{ form.email.label }}Email <br>
+                {{ form.email(placeholder='Your E-mail Address...') }}
+            </p>
+            <!-- Subject of your request -->
+            <p>
+                {{ form.subject.label }}Subject<br>
+                {{form.subject(placeholder='Enter your subject ...')}}
+            </p>
+            <!-- Content of your request -->
+            <p>
+                {{ form.message.label }}Request<br>
+                {{ form.message(placeholder='Enter your request ...') }}
+            </p>
+            <!-- Submit button -->
+            <p>
+                {{ form.submit }}
+            </p>
+        </div>
+    </form><br><br><br><br><br>
+</div>
 </main>
 </body>
 
